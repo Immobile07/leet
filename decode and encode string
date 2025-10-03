@@ -1,0 +1,11 @@
+class Solution:
+
+    def encode(self, strs: List[str]) -> str:
+        st=""
+        for i in strs:
+            st+=i+"  !,#%"
+        return st
+    def decode(self, s: str) -> List[str]:
+        ls=s.split("  !,#%")
+        ls=ls[:len(ls)-1]
+        return ls
